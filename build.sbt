@@ -12,6 +12,7 @@ resolvers ++= Seq("snapshots"     at "http://oss.sonatype.org/content/repositori
                   "staging"       at "http://oss.sonatype.org/content/repositories/staging",
                   "releases"      at "http://oss.sonatype.org/content/repositories/releases"
                  )
+resolvers += "ibiblio maven mirror" at "http://mirrors.ibiblio.org/maven2/"
 
 port in container.Configuration := 9090
 
